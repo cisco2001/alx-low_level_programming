@@ -17,7 +17,7 @@ int main(void)
 	{
 		putchar(character);
 		character--;
-		if (character < 96)
+		if (character < 97)
 			putchar((int)'\n');
 	}
 
