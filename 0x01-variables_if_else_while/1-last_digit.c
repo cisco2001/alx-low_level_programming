@@ -23,18 +23,18 @@ int main(void)
 
 	if (lastDigit > 5)
 	{
-		printf(stdout, "%s of %d is %d", string, n, lastDigit);
-		printf(stdout, " and is greater than 5\n");
+		printf("%s of %d is %d", string, n, lastDigit);
+		printf(" and is greater than 5\n");
 	}
 	if (lastDigit == 0)
 	{
-		printf(stdout, "%s of %d is %d", string, n, lastDigit);
-		printf(stdout, " and is zero\n");
+		printf("%s of %d is %d", string, n, lastDigit);
+		printf(" and is zero\n");
 	}
 	if (lastDigit < 6)
 	{
-		printf(stdout, "%s of %d is %d", string, n, lastDigit);
-		printf(stdout, " and is less than 6 and not 0\n");
+		printf("%s of %d is %d", string, n, lastDigit);
+		printf(" and is less than 6 and not 0\n");
 	}
 	return (0);
 }
