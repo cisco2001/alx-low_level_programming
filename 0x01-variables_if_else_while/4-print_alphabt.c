@@ -15,7 +15,7 @@ int main(void)
 
 	while (character < 123)
 	{
-		if (character != 113 || character != 101)
+		if (character != 113 && character != 101)
 		{
 			putchar(character);
 		}
