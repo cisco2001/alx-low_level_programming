@@ -24,17 +24,17 @@ int main(void)
 
 	if (lastDigit > 5)
 	{
-		printf("%s of %d is %d", string, n, lastDigit);
+		printf("%s %d is %d", string, n, lastDigit);
 		printf(" and is greater than 5\n");
 	}
 	if (lastDigit == 0)
 	{
-		printf("%s of %d is %d", string, n, lastDigit);
+		printf("%s %d is %d", string, n, lastDigit);
 		printf(" and is zero\n");
 	}
 	if (lastDigit < 6)
 	{
-		printf("%s of %d is %d", string, n, lastDigit);
+		printf("%s %d is %d", string, n, lastDigit);
 		printf(" and is less than 6 and not 0\n");
 	}
 	return (0);
