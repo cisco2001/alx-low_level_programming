@@ -15,11 +15,11 @@ int main(void)
 
 	while (character < 123)
 	{
-		if (character != (int)'q' || character != (int)'e')
+		if (character != 113 || character != 101)
 		{
 			putchar(character);
-			character++;
 		}
+		character++;
 
 		if (character > 122)
 			putchar((int)'\n');
