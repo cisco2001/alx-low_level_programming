@@ -15,11 +15,12 @@
 int main(void)
 {
 	int n;
+	int lastDigit;
 	char string[] = "Last digit of\0";
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	int lastDigit = n % 10;
+	lastDigit = n % 10;
 
 	if (lastDigit > 5)
 	{
