@@ -17,10 +17,10 @@ int main(void)
 	{
 		putchar(uppercase++);
 	}
-	putchar((int)'\n');
 	while (lowercase <= 122)
 	{
 		putchar(lowercase++);
 	}
+	putchar((int)'\n');
 	return (0);
 }
