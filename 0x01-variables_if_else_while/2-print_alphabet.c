@@ -16,7 +16,6 @@ int main(void)
 	while (character < 123)
 	{
 		putchar(character);
-		putchar((int)'\n');
 		character++;
 	}
 
