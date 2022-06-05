@@ -32,7 +32,7 @@ int main(void)
 		printf("%s %d is %d", string, n, lastDigit);
 		printf(" and is zero\n");
 	}
-	if (lastDigit < 6)
+	if (lastDigit < 6 && lastDigit != 0)
 	{
 		printf("%s %d is %d", string, n, lastDigit);
 		printf(" and is less than 6 and not 0\n");
