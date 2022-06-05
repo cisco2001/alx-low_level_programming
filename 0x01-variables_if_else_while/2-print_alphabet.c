@@ -17,6 +17,8 @@ int main(void)
 	{
 		putchar(character);
 		character++;
+		if (character > 122)
+			putchar((int)'\n');
 	}
 
 	return (0);
