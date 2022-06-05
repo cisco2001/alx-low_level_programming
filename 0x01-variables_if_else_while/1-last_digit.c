@@ -30,7 +30,7 @@ int main(void)
 	if (lastDigit == 0)
 	{
 		printf("%s %d is %d", string, n, lastDigit);
-		printf(" and is zero\n");
+		printf(" and is 0\n");
 	}
 	if (lastDigit < 6 && lastDigit != 0)
 	{
