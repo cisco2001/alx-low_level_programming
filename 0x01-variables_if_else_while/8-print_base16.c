@@ -15,7 +15,7 @@ int main(void)
 	int hex_number = 0;
 	int ascii_0 = 48, ascii_a = 87;
 
-	while (hex_number <= 16)
+	while (hex_number <= 15)
 	{
 		if (hex_number <= 9)
 		{
@@ -28,7 +28,7 @@ int main(void)
 
 		hex_number++;
 
-		if (hex_number > 16)
+		if (hex_number > 15)
 			putchar((int)'\n');
 	}
 
