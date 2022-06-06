@@ -20,12 +20,10 @@ int main(void)
 		if (hex_number <= 9)
 		{
 			putchar(hex_number + ascii_0);
-			ascii_0++;
 		}
 		else
 		{
 			putchar(hex_number + ascii_a);
-			ascii_a++;
 		}
 
 		hex_number++;
