@@ -12,21 +12,26 @@
 
 int main(void)
 {
-	for (char character = 95; character <= 117; character++)
+	char character = 95, character1 = 99, character2 = 97;
+
+	for (; character <= 117; character++)
 	{
 		if (character == 95 || character == 112 || character == 117)
 			_putchar(character);
 	}
+
 	_putchar(116);
-	for (char character = 99; character <= 104; character++)
+
+	for (; character1 <= 104; character1++)
 	{
-		if (character == 99 || character == 104)
-			_putchar(character);
+		if (character1 == 99 || character1 == 104)
+			_putchar(character1);
 	}
-	for (char character = 97; character <= 114; character++)
+
+	for (; character2 <= 114; character2++)
 	{
-		if (character == 97 || character == 114)
-			_putchar(character);
+		if (character2 == 97 || character2 == 114)
+			_putchar(character2);
 	}
 	_putchar((int)'\n');
 	return (0);
