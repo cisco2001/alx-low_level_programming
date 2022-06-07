@@ -24,5 +24,6 @@ void print_alphabet_x10(void)
 			if (alphabet > 122)
 				_putchar((int)'\n');
 		}
+		alphabet = 97;
 	}
 }
