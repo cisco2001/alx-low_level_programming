@@ -2,7 +2,7 @@
 
 
 /**
- * main - Entry point of this program
+ * print_alphabet - function to print alphabets
  *
  * Descriptiopn: a program to print alphabets in lowercase
  *
@@ -16,7 +16,9 @@ void print_alphabet(void)
 
 	while (alphabet <= 122)
 	{
-		(alphabet > 122) ? _putchar((int)'\n') : _putchar(alphabet);
+		_putchar(alphabet);
 		alphabet++;
+		if (alphabet > 122)
+			_putchar((int)'\n');
 	}
 }
