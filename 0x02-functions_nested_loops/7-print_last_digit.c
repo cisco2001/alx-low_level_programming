@@ -14,5 +14,7 @@
 int print_last_digit(int number)
 {
 	number %= 10;
+
+	_putchar(number);
 	return (number);
 }
