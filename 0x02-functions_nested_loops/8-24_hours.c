@@ -32,7 +32,11 @@ void jack_bauer(void)
 					_putchar(48 + minutes_second_digit);
 					_putchar((int)'\n');
 				}
+				minutes_second_digit = 0;
 			}
+			minutes_first_digit = 0;
 		}
+		hour_second_digit = 0;
 	}
+	hour_first_digit = 0;
 }
