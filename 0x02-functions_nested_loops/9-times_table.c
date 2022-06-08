@@ -2,7 +2,7 @@
 
 
 /**
- * time_table - function to print multiplication table
+ * times_table - function to print multiplication table
  *
  * Decription: a program to print a multiplication table
  *
@@ -31,8 +31,11 @@ void times_table(void)
 
 			if (first_digit != 0)
 				_putchar(48 + first_digit);
+			else
+				_putchar((int)' ');
+
 			_putchar(48 + second_digit);
-			
+
 			if (number2 < 9)
 			{
 				_putchar((int)',');
