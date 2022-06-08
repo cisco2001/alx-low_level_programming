@@ -16,10 +16,12 @@ void jack_bauer(void)
 	int hour_second_digit = 0;
 	int minutes_first_digit = 0;
 	int minutes_second_digit = 0;
+	int limit;
 
 	for (; hour_first_digit <= 2; hour_first_digit++)
 	{
-		for (; hour_second_digit <= 9; hour_second_digit++)
+		(hour_first_digit < 2) ? (limit = 9) : (limit = 3);
+		for (; hour_second_digit <= limit; hour_second_digit++)
 		{
 			for (; minutes_first_digit <= 5; minutes_first_digit++)
 			{
