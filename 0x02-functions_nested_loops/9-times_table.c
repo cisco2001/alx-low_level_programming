@@ -29,7 +29,8 @@ void times_table(void)
 			else
 				first_digit = product % 10;
 
-			_putchar(48 + first_digit);
+			if (first_digit != 0)
+				_putchar(48 + first_digit);
 			_putchar(48 + second_digit);
 			
 			if (number2 < 9)
@@ -38,6 +39,7 @@ void times_table(void)
 				_putchar((int)' ');
 			}
 		}
+		number2 = 0;
 		_putchar((int)'\n');
 	}
 }
