@@ -30,7 +30,7 @@ void more_numbers(void)
 					break;
 			}
 
-			digit++
+			digit++;
 
 			if (digit == 58)
 			{
