@@ -4,7 +4,7 @@
 /**
  * print_diagonal - functiopn to print a diagonal in a screen
  *
- * @n: parameter for passing the numbe rof times character '\' has to be printed
+ * @n: parameter for passing the number of times '\' has to be printed
  *
  * Return: nothing is returned
  */
