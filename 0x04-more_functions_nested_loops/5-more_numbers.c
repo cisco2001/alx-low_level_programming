@@ -14,9 +14,9 @@ void more_numbers(void)
 	char digit = 48;
 	char second_digit = 48;
 
-	while(count < 10)
+	while (count < 10)
 	{
-		while(digit <= 57)
+		while (digit <= 57)
 		{
 			_putchar(digit);
 			if (digit > 57)
