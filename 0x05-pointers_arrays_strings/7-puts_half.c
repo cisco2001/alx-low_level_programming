@@ -7,10 +7,15 @@
 
 void puts_half(char *str)
 {
-	int string_length = _strlen(str);
+	int string_length = 0;
 	int starting_index;
 	char *char_address;
 
+	while(*str != '\0')
+	{
+		string_length++;
+		str++;
+	}
 	starting_index = (string_length % 2 == 0)? (string_length / 2) + 1 : (string_length + 3) / 2;
 	char_address = starting_index + str;
 	while (*char_address != '\0')
