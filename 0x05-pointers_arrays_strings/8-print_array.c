@@ -1,6 +1,7 @@
-#include "main.h"
-
+#include "stdio.h"
+#include "main"
 /**
+
  * print_array - prints n elements of an array of integers
  * @a: holds address of the first element of an array
  * @n: number of elements to be printed
