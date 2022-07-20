@@ -12,7 +12,7 @@
 
 size_t listint_len(const listint_t *h)
 {
-	listint_t node_address = (listint_t *)h;
+	listint_t *node_address = (listint_t *)h;
 	size_t list_size = 0;
 
 	while (node_address != NULL)
