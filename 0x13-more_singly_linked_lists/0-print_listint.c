@@ -1,5 +1,5 @@
 #include "stdlib.h"
-#include "stdout.h"
+#include "stdio.h"
 #include "lists.h"
 
 
@@ -13,7 +13,7 @@
 size_t print_listint(const listint_t *h)
 {
 	unsigned int number_of_nodes = 0;
-	listint_t *node_address = h;
+	listint_t *node_address = (listint_t *)h;
 
 	while (node_address != NULL)
 	{
