@@ -12,9 +12,6 @@ void _puts(char *str)
 	{
 		_putchar((int)(*str));
 		str += 1;
-		if (*str == '\0')
-		{
-			_putchar(10);
-		}
 	}
+	_putchar(10);
 }
