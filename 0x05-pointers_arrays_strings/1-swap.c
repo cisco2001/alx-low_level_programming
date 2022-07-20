@@ -2,21 +2,14 @@
 
 
 /**
- * swap_int - swaps two integers
- *
- * @a: first parameter
- *
- * @b: second parameter
- *
- * Return: nothing is returned
+ * swap_int - swap two integers
+ * @a: First operand
+ * @b: Second operand
  */
-
 
 void swap_int(int *a, int *b)
 {
-	int temp;
-
-	temp = *b;
-	*b = *a;
-	*a = temp;
+	int temp = *a;
+	*a = *b;
+	*b = temp;
 }
