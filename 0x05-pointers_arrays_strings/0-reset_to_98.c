@@ -1,19 +1,10 @@
-#include "main.h"
-
+# include "main.h"
 
 /**
- * reset_to_98 - updates the value it points to 98
- *
- * @n: a pointer
- *
- * Description: function that has a pointer parameter
- *
- * Return:nothing is returned
+ * reset_to_98 - updating value of a pointed variable to 98
+ * @n: a pointer to update a variable
  */
 
-
-void reset_to_98(int *n)
-{
+void reset_to_98(int *n) {
 	*n = 98;
 }
-
