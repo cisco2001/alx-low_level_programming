@@ -12,7 +12,7 @@
 
 size_t print_listint(const listint_t *h)
 {
-	unsigned int number_of_nodes = 0;
+	size_t number_of_nodes = 0;
 	listint_t *node_address = (listint_t *)h;
 
 	while (node_address != NULL)
