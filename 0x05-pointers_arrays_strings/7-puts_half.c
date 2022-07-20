@@ -8,10 +8,11 @@
 void puts_half(char *str)
 {
 	int string_length = _strlen(str);
+	int starting_index;
 	char *starting_point;
 
-	starting_point = (string_length % 2 == 0)? (string_length / 2) + 1 : (string_length + 3) / 2;
-	starting_point += str;
+	starting_index = (string_length % 2 == 0)? (string_length / 2) + 1 : (string_length + 3) / 2;
+	starting_point = starting_index + str;
 	for (; starting_point <= string_length; starting_point++)
 	{
 		_putchar((int)(*starting_point));
