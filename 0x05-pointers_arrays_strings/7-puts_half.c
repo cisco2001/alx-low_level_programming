@@ -9,13 +9,14 @@ void puts_half(char *str)
 {
 	int string_length = _strlen(str);
 	int starting_index;
-	char *starting_point;
+	char *char_address;
 
 	starting_index = (string_length % 2 == 0)? (string_length / 2) + 1 : (string_length + 3) / 2;
-	starting_point = starting_index + str;
-	for (; starting_point <= string_length; starting_point++)
+	char_address = starting_index + str;
+	while (*char_address != '\0')
 	{
-		_putchar((int)(*starting_point));
+		_putchar((int)(*char_address));
+		char_address += 1;
 	}
 	_putchar(10);
 }
