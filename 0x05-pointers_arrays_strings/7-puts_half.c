@@ -9,15 +9,15 @@ void puts_half(char *str)
 {
 	int string_length = 0;
 	int starting_index;
-	char *char_address;
+	char *char_address = str;
 
-	while(*str != '\0')
+	while (*str != '\0')
 	{
 		string_length++;
 		str++;
 	}
 	starting_index = (string_length % 2 == 0)? (string_length / 2) + 1 : (string_length + 3) / 2;
-	char_address = starting_index + str;
+	char_address += starting_index;
 	while (*char_address != '\0')
 	{
 		_putchar((int)(*char_address));
