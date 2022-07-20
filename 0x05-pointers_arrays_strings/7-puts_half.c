@@ -16,7 +16,10 @@ void puts_half(char *str)
 		string_length += 1;
 		str++;
 	}
-	starting_index = (string_length % 2 == 0)? (string_length / 2) + 1 : (string_length + 3) / 2;
+	if (string_length % 2 == 0)
+		starting_index = (string_length / 2);
+	else
+		starting_index = (string_length + 1) / 2;
 	char_address += starting_index;
 	while (*char_address != '\0')
 	{
