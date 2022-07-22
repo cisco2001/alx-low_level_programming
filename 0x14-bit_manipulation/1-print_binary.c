@@ -19,7 +19,7 @@ void print_binary(unsigned long int n)
 	len -= 1;
 
 	if (len > 0) /* create mask based on length of num */
-	mask = mask << len;
+		mask = mask << len;
 
 	while (mask > 0) /* match each rightmost bit to see if 1 or 0 */
 	{
