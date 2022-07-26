@@ -1,6 +1,5 @@
-#ifndef MAIN_H
-#define MAIN_H
-int _putchar(char c);
+#ifndef HEADER_H
+#define HEADER_H
 /* open */
 #include <sys/types.h>
 #include <sys/stat.h>
