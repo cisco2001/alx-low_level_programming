@@ -1,1 +1,1 @@
-# linked lists
+more about linked lists
