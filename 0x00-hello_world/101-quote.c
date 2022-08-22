@@ -1,4 +1,4 @@
-#include "stdio.h"
+#include "stdlib.h"
 
 /**
  * main - entry of the program
