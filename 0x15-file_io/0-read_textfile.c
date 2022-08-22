@@ -1,10 +1,4 @@
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <fcntl.h>
-#include <unistd.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include "main.h"
+#include "holberton.h"
 
 /**
  * read_textfile - read a certain size and prints to std output
@@ -52,4 +46,5 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	close(fd);
 	return (n_read);
+
 }
