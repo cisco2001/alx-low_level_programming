@@ -6,6 +6,7 @@
   * @s: pointer to char
  */
 
+int _strlen(char *s);
 void print_rev(char *s)
 {
 	char *char_address = (s + _strlen(s) - 1);
@@ -22,3 +23,14 @@ void print_rev(char *s)
 	}
 }
 
+int _strlen(char *s)
+{
+	int string_length = 0;
+
+	while (*s != '\0')
+	{
+		string_length += 1;
+		s = (s + 1);
+	}
+	return (string_length);
+}
