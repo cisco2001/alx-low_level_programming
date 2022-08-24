@@ -8,13 +8,13 @@
 
 void print_rev(char *s)
 {
-	char *char_address = (s + _strlen((*s)) - 1);
+	char *char_address = (s + _strlen(s) - 1);
 
 	while (1)
 	{
 		if (char_address >= s)
 		{
-			_putchar((char_address));
+			_putchar((*char_address));
 			char_address = (char_address - 1);
 		}
 		else
