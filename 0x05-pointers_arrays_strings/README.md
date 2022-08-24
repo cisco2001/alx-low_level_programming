@@ -1,1 +1,0 @@
-# pointing to memory locations
