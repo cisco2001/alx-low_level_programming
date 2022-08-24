@@ -19,9 +19,20 @@ void print_rev(char *s)
 			char_address = (char_address - 1);
 		}
 		else
+		{
 			_putchar(10);
+			break;
+		}
 	}
 }
+
+/**
+  * _strlen - function that calculates length of the string
+  *
+  * @s: pointer to char
+  *
+  * Return: length of a string
+ */
 
 int _strlen(char *s)
 {
