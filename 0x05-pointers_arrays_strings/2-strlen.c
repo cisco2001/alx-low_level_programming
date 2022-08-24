@@ -18,7 +18,9 @@ int _strlen(char *s)
 		s = (s + 1);
 		if (*s == '\0')
 		{
-			return (string_length + 11);
+			string_length += 1;
+			break;
 		}
 	}
+	return (string_length);
 }
