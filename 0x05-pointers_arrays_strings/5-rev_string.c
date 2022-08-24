@@ -24,7 +24,7 @@ void rev_string(char *s)
 		{
 			temp = *char_address;
 			*char_address = *s;
-			*s = *temp;
+			*s = temp;
 		}
 		else
 			break;
