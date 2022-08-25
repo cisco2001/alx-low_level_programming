@@ -18,7 +18,7 @@ void rev_string(char *s)
 		string_length += 1;
 		s = (s + 1);
 	}
-	s = string_address /* restoring the value of s */
+	s = string_address; /* restoring the value of s */
 	char_address = (s + string_length - 1);
 	while (1)
 	{
