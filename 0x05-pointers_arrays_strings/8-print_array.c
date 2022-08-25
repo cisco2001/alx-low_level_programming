@@ -19,6 +19,8 @@ void print_array(int *a, int n)
 			printf("%d\n", *a);
 			break;
 		}
+		if (n <= 0)
+			printf("\n");
 		a = (a + 1);
 		n = (n - 1);
 	}
