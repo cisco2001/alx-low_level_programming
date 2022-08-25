@@ -20,7 +20,10 @@ void print_array(int *a, int n)
 			break;
 		}
 		if (n <= 0)
+		{
 			printf("\n");
+			break;
+		}
 		a = (a + 1);
 		n = (n - 1);
 	}
