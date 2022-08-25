@@ -23,6 +23,7 @@ char *_strcpy(char *dest, char *src)
 			break;
 		}
 		src = (src + 1);
+		dest = (dest + 1);
 	}
 	dest = temp;
 	return (dest);
