@@ -15,13 +15,13 @@ void puts_half(char *str)
 	while (*str != '\0')
 	{
 		strlen += 1;
-		str = (str +1 );
+		str = (str + 1);
 	}
 	str = temp;
 	if (strlen % 2 == 0)
 		char_address = (str + (strlen / 2));
 	else
-		char_address = (str + ((strlen - 1) / 2));
+		char_address = (str + ((strlen - 1) / 2) + 1);
 	while (*char_address != '\0')
 	{
 		_putchar((*char_address));
