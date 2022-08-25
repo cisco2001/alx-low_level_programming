@@ -10,14 +10,15 @@ void rev_string(char *s)
 {
 	int string_length = 0;
 	char *char_address;
-	char temp = s; /* temp is for holding values temporary */
+	char temp; /* temp is for holding values temporary */
+	char *string_address = s;
 
 	while (*s != '\0')
 	{
 		string_length += 1;
 		s = (s + 1);
 	}
-	s = temp; /* restoring the value of s */
+	s = string_address /* restoring the value of s */
 	char_address = (s + string_length - 1);
 	while (1)
 	{
