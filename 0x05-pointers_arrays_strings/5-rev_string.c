@@ -26,8 +26,8 @@ void rev_string(char *s)
 			*char_address = *s;
 			*s = temp;
 
-			char_address = (char_address + 1);
-			s = (s - 1);
+			char_address = (char_address - 1);
+			s = (s + 1);
 		}
 		else
 			break;
