@@ -9,7 +9,7 @@
 
 int char_to_number(char *n, int position)
 {
-	int integer  = (int)(*n);
+	int integer  = (int)(*n) - 48;
 	int i = 0;
 
 	if (position - 1 == 0)
