@@ -12,7 +12,9 @@ int char_to_number(char *n, int position)
 	int integer  = (int)(*n);
 	int i = 0;
 
-	for (; i < position; i++)
+	if (position - 1 == 0)
+		return (integer);
+	for (; i < (position - 1); i++)
 		integer *= 10;
 	return (integer);
 }
@@ -36,7 +38,7 @@ int _atoi(char *s)
 	{
 		if (*s == 45 && counter == 0)
 			sign *= -1;
-		if (*s >= 48 || *s <= 57)
+		if (*s >= 48 && *s <= 57)
 		{
 			if (counter < 1)
 				starting_address = s;
@@ -44,7 +46,7 @@ int _atoi(char *s)
 			number_length += 1;
 		}
 		s = (s + 1);
-		if ((*s < 48 || *s > 57) && counter > 0)
+		if ((*s < 48 && *s > 57) && counter > 0)
 			break;
 	}
 
