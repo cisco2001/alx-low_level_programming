@@ -9,7 +9,7 @@
 
 int char_to_number(char *n, int position)
 {
-	int integer  = (int)(*s);
+	int integer  = (int)(*n);
 	int i = 0;
 
 	for (; i < position; i++)
@@ -27,14 +27,15 @@ int char_to_number(char *n, int position)
 int _atoi(char *s)
 {
 	int  number_length = 0;
-	int number = 1;
+	int sign = 1;
 	char *starting_address; /* pointer to the first character */
 	int counter = 0;
+	int number = 0;
 
-	while (1)
+	while (*s != 0)
 	{
-		if (*s == 45)
-			number *= -1;
+		if (*s == 45 && counter == 0)
+			sign *= -1;
 		if (*s >= 48 || *s <= 57)
 		{
 			if (counter < 1)
@@ -42,17 +43,21 @@ int _atoi(char *s)
 			counter += 1;
 			number_length += 1;
 		}
+		s = (s + 1);
 		if ((*s < 48 || *s > 57) && counter > 0)
 			break;
-		s = (s + 1);
 	}
 
 	if (number_length == 0)
-		return (0)
+		return (0);
 	else
 	{
 		while (number_length > 0)
 		{
-			number = 
-
+			number += char_to_number(starting_address, number_length);
+			starting_address = (starting_address + 1);
+			number_length--;
+		}
+	}
+	return (sign * number);
 }
