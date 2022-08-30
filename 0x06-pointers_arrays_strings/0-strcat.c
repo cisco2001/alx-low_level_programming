@@ -30,7 +30,7 @@ int _strlen(char *str)
 char *_strcat(char *dest, char *src)
 {
 	char temp[_strlen(dest) + _strlen(src) - 1];
-	int i = 0, j = _strlen(dest) - 1;
+	int i = 0, j = _strlen(dest) - 2;
 
 	while (1)
 	{
