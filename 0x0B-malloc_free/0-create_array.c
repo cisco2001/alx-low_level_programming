@@ -19,5 +19,5 @@ char *create_array(unsigned int size, char c)
 	char_array = (char *)malloc(size);
 	while (counter < size)
 		*(char_array + counter++) = c;
-	return (char_array);
+	return (char_array || NULL);
 }
