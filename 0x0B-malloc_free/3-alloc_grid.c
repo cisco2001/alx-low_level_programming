@@ -15,7 +15,7 @@ int **alloc_grid(int width, int height)
 
 	if (width <= 0 || height <= 0)
 		return (NULL);
-	matrix = calloc(sizeof(int) * width * height);
+	matrix = calloc(width * height, sizeof(int));
 	if (!matrix)
 		return (NULL);
 	return (matrix);
