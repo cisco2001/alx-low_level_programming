@@ -29,13 +29,12 @@ int _strlen(char *str)
 
 char *_strdup(char *str)
 {
-	if (str == NULL)
-		return (NULL);
-
 	char *dup_str = malloc(sizeof(char) * _strlen(str) + 1);
 	int counter = 0;
 	char *temp = str;
 
+	if (size == NULL)
+		return (NULL);
 	if (dup_str == NULL)
 		return (NULL);
 	while (1)
