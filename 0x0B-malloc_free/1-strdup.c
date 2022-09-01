@@ -33,7 +33,7 @@ char *_strdup(char *str)
 	int counter = 0;
 	char *temp = str;
 
-	if (size == NULL)
+	if (str == NULL)
 		return (NULL);
 	if (dup_str == NULL)
 		return (NULL);
