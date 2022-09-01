@@ -2,6 +2,25 @@
 #include "stdlib.h"
 
 /**
+  * _strlen - calculates string length
+  *
+  * @str: pointer to a string
+  * Return: length of a string
+  */
+
+int _strlen(char *str)
+{
+	int string_length = 0;
+
+	while (str)
+	{
+		string_length++;
+		str++;
+	}
+	return (string_length);
+}
+
+/**
   * _strdup - duplicates a string
   *
   * @str: pointer to a string to be duplicated
