@@ -12,7 +12,7 @@ int _strlen(char *str)
 {
 	int string_length = 0;
 
-	while (str)
+	while (*str)
 	{
 		string_length++;
 		str++;
@@ -33,13 +33,11 @@ char *_strdup(char *str)
 	int counter = 0;
 	char *temp = str;
 
-	if (str == NULL)
-		return (NULL);
-	if (dup_str == NULL)
+	if (str == NULL || dup_str == NULL)
 		return (NULL);
 	while (1)
 	{
-		if (counter != _strlen(str))
+		if (counter < _strlen(temp))
 			*(dup_str + counter++) = *(str++);
 		else
 		{
