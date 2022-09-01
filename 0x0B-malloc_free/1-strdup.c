@@ -22,7 +22,7 @@ char *_strdup(char *str)
 	while (1)
 	{
 		if (counter != _strlen(str))
-			*(dup_str + counter++) = str++;
+			*(dup_str + counter++) = *(str++);
 		else
 		{
 			*(dup_str + counter) = '\0';
