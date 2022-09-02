@@ -30,6 +30,7 @@ int _strlen(char *str)
 char *_strcat(char *dest, char *src)
 {
 	char temp[_strlen(dest) + _strlen(src) + 1];
+	char *src_temp = src;
 	int i = 0, j = _strlen(dest) - 2;
 
 	while (1)
@@ -44,6 +45,7 @@ char *_strcat(char *dest, char *src)
 			break;
 	}
 	dest = temp;
+	src = src_temp;
 	return (dest);
 }
 
