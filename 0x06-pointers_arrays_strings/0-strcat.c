@@ -12,10 +12,7 @@ int _strlen(char *str)
 	int string_length = 0;
 
 	while (*str)
-	{
-		string_length++;
-		str = (str + 1);
-	}
+		string_length++, str++;
 	return (string_length);
 }
 
@@ -29,23 +26,11 @@ int _strlen(char *str)
 
 char *_strcat(char *dest, char *src)
 {
-	char temp[_strlen(dest) + _strlen(src) + 1];
-	char *src_temp = src;
-	int i = 0, j = _strlen(dest) - 2;
+	int index = _strlen(dest), j = 0;
 
-	while (1)
-	{
-		if (*dest)
-		{
-			temp[i++] = *dest;
-			dest = (dest + 1);
-		}
-		temp[j++] = *(++src);
-		if (*src)
-			break;
-	}
-	dest = temp;
-	src = src_temp;
+	while (*src)
+		*(dest + index++) = *(src + j++);
+	*(dest + index) = '\0';
 	return (dest);
 }
 
