@@ -28,8 +28,8 @@ char *_strcat(char *dest, char *src)
 {
 	int index = _strlen(dest), j = 0;
 
-	while (*src)
-		dest[index++] = src[j++];
+	while (*(src + j))
+		*(dest + index++) = *(src + j++);
 	*(dest + index) = '\0';
 	return (dest);
 }
