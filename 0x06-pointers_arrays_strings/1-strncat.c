@@ -28,7 +28,8 @@ int _strlen(char *str)
 char *_strncat(char *dest, char *src, int n)
 {
 	int index = _strlen(dest), j = 0;
-	while (n > 0)
+
+	while (n > 0 && *(src + j))
 		*(dest + index++) = *(src + j++), n--;
 	return (dest);
 }
