@@ -1,1 +1,1 @@
-# pointing to a pointer
+Even more pointers, arrays and strings07
